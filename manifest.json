@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Emu",
+  "version": "3.1",
+  "description": "Emu, fork of SweezeBreeze tailored for usage with tagging.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://*.nationstates.net/*"
+    ],
+    "js": [
+      "content.js"
+    ]
+  }]
+}
